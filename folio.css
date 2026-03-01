@@ -8,15 +8,13 @@ html{
 }
 
 body{
-    background-color: #4E3B2A;
+    background-color: #f57f17;
     border: 6px solid #4E3B2A;
     border-left: 15px solid #4E3B2A;
     border-right: 15px solid #4E3B2A;
     height: 100%;
     margin: 0;
     padding: 0;
-    padding-top: 80px;
-    /* overflow: hidden; */
 }
 
 header{
@@ -31,7 +29,6 @@ header{
     left: 0;
     right: 0;
     height: 80px;
-    /* z-index: -99; */
     padding: 0;
     border-bottom: 6px solid #4E3B2A;
     perspective: 700;
@@ -95,9 +92,8 @@ button{
     border-collapse: none;
 }
 
-
 button:hover{
-    background: red;
+    background: #800000;
     opacity: 0.6;
     cursor: pointer;
     ;
@@ -110,28 +106,27 @@ button:hover{
     min-height: 100vh;
     position: relative;
     z-index: -1;
-    /* margin-top: 14%; */
     width: auto;
     height: 100%;
     margin: 0;
-    margin-top: 100px;
+    padding: 0;
 }
 
 .boite{
     display: none;
     overflow: hidden;
-    /* margin-top: 100px; */
+    margin: 0;
+    padding: 0;
 }
 
 #accueil{
     display: block;
 }
 
-h2{
+#Gi{
     font-size: 3.5em;
     color: #d4af37;
-    /* margin: 70px 5px 4px 50px; */
-    padding: 10% 0 1% 25%;
+    padding: 5% 0 1% 20%;
     animation: trans 1s ease-out;
 }
 
@@ -153,6 +148,7 @@ p{
 
 .bla{
     margin-left: 5%;
+    margin-bottom: 0;
     background: #4A231F;
     padding: 10px;
     color: #FAFAFA;
@@ -192,11 +188,20 @@ p{
 }
 
 /* section du profil */
+#Rad{
+    text-align: center;
+    color: #800000;
+    background-color: #d4Af37;
+    font-size: 3.5em;
+}
+
 .para{
     text-align: justify;
     padding: 3%;
+    background: #4E3B2A;
 }
 
 #conteneur.blur{
     filter: blur(9px);
 }
+
