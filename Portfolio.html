@@ -14,14 +14,14 @@
         </div>
         <div id="vide"></div>
         <nav class="nav">
-            <button onclick="changerPager('accueil')">ACCUEIL</button>
-            <button onclick="changerPager('ptofil')">PROFIL</button>
-            <button onclick="changerPager('projets')">PROJETS</button>
+            <button type="button" onclick="changerPage('accueil')">ACCUEIL</button>
+            <button onclick="changerPage('profil')">PROFIL</button>
+            <button onclick="changerPage('projets')">PROJETS</button>
             <!-- <button onclick="changerPager('accueil')">CONTACT</button> -->
         </nav>
     </header>
     <div id="conteneur">
-        <section>
+        <section id="accueil" class="boite">
             <div>
                 <h2>Gino RAKOTOMALALA</h2>
                 <p class="sous-t">Etudiant en L1-DA2I à l'EMIT de l'année 2025-2026.<br>Pasionné par le developpement web et la programmation.
@@ -32,6 +32,35 @@
                 </p>
             </div>
         </section>
+        <section id="profil" class="boite blur">
+           <div>
+               <h2>RAKOTOMALALA Gino Paulo</h2>
+               <p class="para">Je m'appelle Gino, actuellement étudiant en première année de licence en informatique, plus précisément en Développement d'applications Internet/Intranet(DA2I) à l'EMIT. 
+                   Je m'intéresse particulièrement au Développement web et aux scripts Python en ce moment.
+                   Je cherche à améliorer mes compétences et à créer de petits projets personnels pour pratiquer.
+               </p>
+               <h3 class="je">compétences actuelles</h3>
+                   <ul>
+                       <li><span class="pre">Langages:</span> HTML, CSS, JavaScript, C++(arduino) et Python.(Les bases)</li>
+                       <li><span class="pre">OUtils:</span> VS Code, Git, Github, IDE Arduino, SimulIDE, navigateur et console développeur.</li>
+                       <li><span class="pre">Conceptes:</span> Variables, Fonctions, Structure HTML/CSS, circuit logique, logique de programmation;</li>
+                   </ul>
+                   <h3 class="je">Ce que je souhaite apprendre et approfondir.</h3>
+                   <ul>
+                       <li><span>JavaScript+React</span></li>
+                       <li><span>Java</span></li>
+                       <li><span>Développement back-end</span></li>
+                       <li><span>Projets web complets</span></li>
+                       <li><span>Robotique</span></li>
+                       <li><span>Intelligence Artificiel</span></li>
+                   </ul>
+            </div>
+            <a href="" download="CV-de-Gino" id="CV">Télécharger mon CV</a>
+        </section>
+        <section id="projets" class="boite blur">
+            d
+        </section>
     </div>
+    <script src="animation.js"></script>
 </body>
 </html>

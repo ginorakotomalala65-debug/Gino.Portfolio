@@ -1,4 +1,12 @@
 
+html{
+    scrollbar-gutter: stable;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: #4E3B2A;
     border: 6px solid #4E3B2A;
@@ -7,6 +15,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
+    padding-top: 80px;
     /* overflow: hidden; */
 }
 
@@ -19,12 +28,17 @@ header{
     padding: 0 10px;
     position: sticky;
     top: 0;
-    width: 100%;
-    z-index: -99;
+    left: 0;
+    right: 0;
+    height: 80px;
+    /* z-index: -99; */
     padding: 0;
     border-bottom: 6px solid #4E3B2A;
     perspective: 700;
+    border: 2px solid red;
 }
+
+/* Les éléments dans le header. */
 
 .head{
     animation: logo 1s ease-in-out;
@@ -45,7 +59,7 @@ header{
 }
 
 .G{
-    font-size: 3em;
+    font-size: 1.5em;
     color: #d4af37;
     padding: 5px 0 5px 20px;
     border-radius: 50%;
@@ -55,8 +69,8 @@ header{
 }
 
 .R{
-    font-size: 2.5em;
-     color: #800000;
+    font-size: 1em;
+     color: #2B1E14;
     display: inline-block;
     text-decoration: overline #d4af37;
 }
@@ -72,32 +86,45 @@ header{
 
 button{
     margin: 0 48px;
-    padding: 1em;
+    padding: 0.5em;
     font-size: 1.5em;
     font-family: sans-serif;
     color: #d4af37;
     border-radius: 11px;
     background: #826A4B;
+    border-collapse: none;
 }
+
 
 button:hover{
-    background: red !important;
-    opacity: 0.6 !important;
-    cursor: pointer !important;
+    background: red;
+    opacity: 0.6;
+    cursor: pointer;
     ;
 }
-
+/* La séction de l'acceuil */
 
 #conteneur{
-    background: url("img/Gemini_Generated_Image_diittxdiittxdiit.png") no-repeat center center;
+    background: url("img/Gemini_Generated_Image_diittxdiittxdiit.png") center/cover no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
-    background-size: cover;
     position: relative;
-    z-index: -100;
+    z-index: -1;
     /* margin-top: 14%; */
     width: auto;
-    height: auto;
+    height: 100%;
     margin: 0;
+    margin-top: 100px;
+}
+
+.boite{
+    display: none;
+    overflow: hidden;
+    /* margin-top: 100px; */
+}
+
+#accueil{
+    display: block;
 }
 
 h2{
@@ -145,4 +172,31 @@ p{
         transform: translatex(0) scale(1);
         filter: blur(0);
     }
+}
+
+/* Mon CV toujours dans la page d'acceuil*/
+
+#CV{
+    text-align: center;
+    background: chartreuse;
+    color: crimson;
+    font-size: 2em;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* section du profil */
+.para{
+    text-align: justify;
+    padding: 3%;
+}
+
+#conteneur.blur{
+    filter: blur(9px);
 }
