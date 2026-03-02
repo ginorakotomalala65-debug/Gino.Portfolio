@@ -11,6 +11,13 @@ function changerPage(idCible) {
 document.getElementById(idCible).style.display = "block";
 }
 
-console.log("script chargé");
-// alert( 'ça ne marche toujours pas');
+// color activer
+const buttons = document.querySelectorAll("nav button");
+
+buttons.forEach(btn => {
+    btn.addEventListener("click"), function(){
+        buttons.forEach(b => b.classList.remove("active"));
+        this.classList.add("active");
+    };
+});
 
