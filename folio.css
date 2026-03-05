@@ -101,10 +101,6 @@ button{
     border: none;
 }
 
-button.active{
-    /* background: #800000; */
-}
-
 
 button:hover{
     opacity: 0.6;
@@ -116,6 +112,7 @@ button:hover{
 #conteneur{
     background: url("img/Gemini_Generated_Image_dcb605dcb605dcb6.png") center/cover no-repeat;
     background-attachment: fixed;
+    background-position-y: 70px;
     min-height: 100vh;
     position: relative;
     width: auto;
@@ -183,6 +180,11 @@ p{
 }
 
 /* section du profil */
+
+#profil{
+    animation: profil 1s ease-in;
+}
+
 #Rad{
     text-align: center;
     color: #121b28;
@@ -206,7 +208,7 @@ p{
 #CV{
     text-align: center;
     background: #121b28;
-    color: #f8d237;
+    color: #f2b006;
     font-size: 2em;
     border: 2px solid #4E3B2A;
     border-radius: 25px;
@@ -215,7 +217,6 @@ p{
     padding: 8px;
     width: fit-content;
     margin: 50px auto;
-    /* z-index: 100 !important; */
 }
 
 #CV:hover{
@@ -230,18 +231,31 @@ p{
 }
 
 .pre{
-    color: #121b28;
+    color: #f2b006;
 }
 
 li{
     color: #FAFAFA;
 }
 
+@keyframes profil {
+    0%{
+        transform: translateY(-1000px);
+    }
+    100%{
+        transform: translateY();
+    }
+}
+
 /* section projets */
+
+#projets{
+    animation: projet 1s ease-in;
+}
 
  #réaliser{
      margin-top: 100px;
-     color: #f8d237;
+     color: #121b28;
      font-size: 2em;
  }
 
@@ -261,7 +275,6 @@ li{
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    /* border-radius: 50px; */
 }
 
 .img{
@@ -276,7 +289,7 @@ img{
 
 }
 
-.ancre{
+.ancre,.ancre2{
     text-align: center;
     background-color: #2c3c55;
     border: 1px solid #455a76;
@@ -287,7 +300,25 @@ img{
     font-size: 2em;
 }
 
+.ancre:hover{
+    text-decoration: underline;
+    color: #d79005;
+}
+.ancre2:hover{
+    transform: translateY(-200px);
+}
+
 .notif{
     color: #FAFAFA;
     text-align: justify;
+}
+
+@keyframes projet {
+    0%{
+        transform: scale(8);
+        /* transition: 2s; */
+    }
+    100%{
+        transform: scale();
+    }
 }
