@@ -8,17 +8,15 @@ html{
 }
 
 body{
-    background-color: #4E3B2A;
-    border: 6px solid #4E3B2A;
-    border-left: 15px solid #4E3B2A;
-    border-right: 15px solid #4E3B2A;
+    background-color: #455a76;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 header{
-    background: #4E3B2A;
+    width: 100%;
+    background: #121b28;
     margin: 0;
     display: flex;
     align-items: center;
@@ -30,7 +28,6 @@ header{
     right: 0;
     height: 80px;
     padding: 0;
-    border-bottom: 6px solid #4E3B2A;
     perspective: 700;
     z-index: 1;
 }
@@ -64,19 +61,19 @@ header{
 
 .G{
     font-size: 1.5em;
-    color: #d4af37;
+    color: #f2b006;
     padding: 5px 0 5px 20px;
     border-radius: 50%;
     display: inline-block;
-    background: #800000;
+    background: #455a76;
     /* border: 3px solid #2B1E14; */
 }
 
 .R{
     font-size: 1em;
-    color: #2B1E14;
+    color: #f8d237;
     display: inline-block;
-    text-decoration: overline #d4af37;
+    text-decoration: overline #d79005;
 }
 
 #vide{
@@ -98,9 +95,9 @@ button{
     padding: 0.5em;
     font-size: 1em;
     font-family: sans-serif;
-    color: #d4af37;
+    color: #f2b006;
     border-radius: 11px;
-    background: #826A4B;
+    background: #2c3c55;
     border: none;
 }
 
@@ -110,7 +107,6 @@ button.active{
 
 
 button:hover{
-    background: #800000;
     opacity: 0.6;
     cursor: pointer;
     ;
@@ -118,11 +114,10 @@ button:hover{
 /* La séction de l'acceuil */
 
 #conteneur{
-    background: url("img/Gemini_Generated_Image_diittxdiittxdiit.png") center/cover no-repeat;
+    background: url("img/Gemini_Generated_Image_dcb605dcb605dcb6.png") center/cover no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
     position: relative;
-    /* z-index: -1; */
     width: auto;
     height: 100%;
     margin: 0;
@@ -142,7 +137,7 @@ button:hover{
 
 #Gi{
     font-size: 3.5em;
-    color: #ffffff;
+    color: #f8d237;
     padding: 5% 0 1% 20%;
     animation: trans 1s ease-out;
 }
@@ -157,7 +152,7 @@ p{
     margin-left: 12%;
     background: #E3D5B8;
     padding: 10px;
-    color: #2B1E14;
+    color: #394d6a;
     border-radius: 15px;
     animation: trans 1s ease;
     box-shadow: 5px 5px 2px #b3a690, inset 5px 5px 1px #d8c4a3;
@@ -166,12 +161,12 @@ p{
 .bla{
     margin-left: 5%;
     margin-bottom: 0;
-    background: #4A231F;
+    background: #394d6a;
     padding: 10px;
     color: #FAFAFA;
     border-radius: 15px;
     animation: trans 1s ease;
-    box-shadow: 5px 5px 2px #201710, inset 5px 5px 1px #552621;
+    box-shadow: 5px 5px 2px #3e0a839f, inset 5px 5px 1px #a372d1;
 }
 
 @keyframes trans{
@@ -190,8 +185,8 @@ p{
 /* section du profil */
 #Rad{
     text-align: center;
-    color: #800000;
-    background-color: #d4Af37;
+    color: #121b28;
+    background-color: #f2b006;
     font-size: 3.5em;
     margin-top:10%;
 }
@@ -199,49 +194,100 @@ p{
 .para{
     text-align: justify;
     padding: 3%;
-    background: #4E3B2A;
+    background: #2c3c55;
 }
 
 #conteneur.blur{
     filter: blur(9px);
 }
 
-/* Mon CV toujours dans la page d'acceuil*/
-
-a{
-    /* z-index: 100; */
-}
+/* Mon CV toujours dans la page de profil*/
 
 #CV{
     text-align: center;
-    background: #800000;
-    color: #d4af37;
+    background: #121b28;
+    color: #f8d237;
     font-size: 2em;
-    border: 2px solid #fff;
+    border: 2px solid #4E3B2A;
     border-radius: 25px;
     display: block;
     text-decoration: none;
     padding: 8px;
     width: fit-content;
     margin: 50px auto;
-    z-index: 100 !important;
+    /* z-index: 100 !important; */
 }
 
 #CV:hover{
-    background: #d4af37;
-    color: #800000;
+    background: #f8d237;
+    color: #121b28;
 }
 
 .je{
     font-size: 2em;
-    color: #d4af37;
+    color: #f2b006;
     padding-left: 5%;
 }
 
 .pre{
-    color: #800000;
+    color: #121b28;
 }
 
 li{
     color: #FAFAFA;
+}
+
+/* section projets */
+
+ #réaliser{
+     margin-top: 100px;
+     color: #f8d237;
+     font-size: 2em;
+ }
+
+#pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.list{
+    width: 30%;
+    height: 100%;
+    border: 1px solid #FAFAFA;
+    background-color: #121b28;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    /* border-radius: 50px; */
+}
+
+.img{
+    width: 30vw;
+    height: 50vh;
+    width: auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.ancre{
+    text-align: center;
+    background-color: #2c3c55;
+    border: 1px solid #455a76;
+    width: auto;
+    padding: 2px;
+    text-decoration: none;
+    color: #f8d237;
+    font-size: 2em;
+}
+
+.notif{
+    color: #FAFAFA;
+    text-align: justify;
 }
