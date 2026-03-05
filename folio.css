@@ -32,6 +32,7 @@ header{
     padding: 0;
     border-bottom: 6px solid #4E3B2A;
     perspective: 700;
+    z-index: 1;
 }
 
 /* #rest{
@@ -73,7 +74,7 @@ header{
 
 .R{
     font-size: 1em;
-     color: #2B1E14;
+    color: #2B1E14;
     display: inline-block;
     text-decoration: overline #d4af37;
 }
@@ -104,7 +105,7 @@ button{
 }
 
 button.active{
-    background: #800000;
+    /* background: #800000; */
 }
 
 
@@ -121,7 +122,7 @@ button:hover{
     background-attachment: fixed;
     min-height: 100vh;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     width: auto;
     height: 100%;
     margin: 0;
@@ -141,7 +142,7 @@ button:hover{
 
 #Gi{
     font-size: 3.5em;
-    color: #d4af37;
+    color: #ffffff;
     padding: 5% 0 1% 20%;
     animation: trans 1s ease-out;
 }
@@ -207,6 +208,10 @@ p{
 
 /* Mon CV toujours dans la page d'acceuil*/
 
+a{
+    /* z-index: 100; */
+}
+
 #CV{
     text-align: center;
     background: #800000;
@@ -219,7 +224,7 @@ p{
     padding: 8px;
     width: fit-content;
     margin: 50px auto;
-    z-index: 20;
+    z-index: 100 !important;
 }
 
 #CV:hover{
