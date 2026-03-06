@@ -5,6 +5,7 @@ html{
 
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 
 body{
@@ -66,7 +67,8 @@ header{
     border-radius: 50%;
     display: inline-block;
     background: #455a76;
-    /* border: 3px solid #2B1E14; */
+    box-shadow:  5px 5px 3px #2d3644,
+             -5px -2px 3px #6e90bd;
 }
 
 .R{
@@ -98,6 +100,8 @@ button{
     color: #f2b006;
     border-radius: 11px;
     background: #2c3c55;
+    box-shadow: inset 5px 5px 8px #405c88,
+            inset -5px -5px 8px #455e85;
     border: none;
 }
 
@@ -124,7 +128,6 @@ button:hover{
 .boite{
     display: none;
     overflow: hidden;
-    margin: 0;
     padding: 0;
 }
 
@@ -137,39 +140,43 @@ button:hover{
     color: #f8d237;
     padding: 5% 0 1% 20%;
     animation: trans 1s ease-out;
+    margin: 50px 0 50px;
 }
 
 p{
     color: #FAFAFA;
     font-size: 1.7em;
     display: inline-block;
+    margin: 50px 0 50px;
 }
 
 .sous-t{
     margin-left: 12%;
-    background: #E3D5B8;
     padding: 10px;
     color: #394d6a;
     border-radius: 15px;
     animation: trans 1s ease;
-    box-shadow: 5px 5px 2px #b3a690, inset 5px 5px 1px #d8c4a3;
+    background: linear-gradient(145deg, #f3e4c5, #ccc0a6);
+    box-shadow:  6px 6px 5px #5b554a,
+             -6px -6px 5px #ffffff;
 }
 
 .bla{
     margin-left: 5%;
     margin-bottom: 0;
-    background: #394d6a;
     padding: 10px;
     color: #FAFAFA;
     border-radius: 15px;
     animation: trans 1s ease;
-    box-shadow: 5px 5px 2px #3e0a839f, inset 5px 5px 1px #a372d1;
+    background: #2a394e;
+    box-shadow:  5px 5px 8px #121922,
+             -5px -5px 8px #42597a;
 }
 
 @keyframes trans{
     0%{
         opacity: 0;
-        transform: translatex(-300px) scale(0.4);
+        transform: translatex(-800px) scale(0.4);
         filter: blur(5px);
     }
     100%{
@@ -182,8 +189,9 @@ p{
 /* section du profil */
 
 #profil{
-    animation: profil 1s ease-in;
+     animation: profil 1s ease-in;
 }
+   
 
 #Rad{
     text-align: center;
@@ -199,12 +207,25 @@ p{
     background: #2c3c55;
 }
 
+.box{
+    background: linear-gradient(45deg, #6e90bd, #121b28, #1d2b40, #455e85);
+    width: auto;
+    height: 100%;
+    padding: 5px;
+    margin-left: 3%;
+    border-radius: 25px;
+    box-shadow:  5px 5px 10px #070b10,
+             -5px -5px 10px #1d2b40;
+}
+
 #conteneur.blur{
     filter: blur(9px);
 }
 
 #anicon{
     display: flex;
+    
+    background: linear-gradient(45deg, #6e90bd #121b28, #1d2b40, #455e85);
 }
 
 #icon{
@@ -268,6 +289,7 @@ p{
 #CV:hover{
     background: #f8d237;
     color: #121b28;
+    transform: translateY(12px);
 }
 
 .je{
@@ -309,7 +331,7 @@ li{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 50px;
+    margin: 50px 0 50px;
 }
 
 .list{
@@ -366,4 +388,56 @@ img{
     100%{
         transform: scale();
     }
+}
+
+/* footer */
+
+footer{
+    background: #121b28;
+    margin: 0;
+    padding: 0;
+}
+
+#cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    list-style: none;
+}
+
+.contact{
+    margin: 20px;
+    text-decoration: none;
+    padding: 6px;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #101824, #131d2b);
+    box-shadow:  5px 5px 10px #070b10,
+             -5px -5px 10px #1d2b40;
+}
+
+.contact:hover{
+    box-shadow: inset 5px 5px 10px #070b10,
+            inset -5px -5px 10px #1d2b40;
+}
+
+.fa-envelope{
+    color:aliceblue;
+}
+
+.fa-phone{
+    color: rgb(199, 161, 78);
+}
+
+.fa-facebook{
+    color: rgb(28, 145, 223);
+}
+
+.fa-github{
+    color: #000;
+}
+
+.fa-whatsapp{
+    color: rgb(55, 218, 69);
 }
