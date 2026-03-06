@@ -203,6 +203,52 @@ p{
     filter: blur(9px);
 }
 
+#anicon{
+    display: flex;
+}
+
+#icon{
+    width: 20em;
+    height: 20em;
+    /* background-color: #f30000; */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    animation: diaporama 12s  linear infinite;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes diaporama {
+    0%{
+        background-image: url("img/HTML.png");
+    }
+    12.5%{
+        background-image: url("img/CSS.png");
+    }
+    25%{
+        background-image: url("img/VS\ code.png");
+    }
+    37.5%{
+        background-image: url("img/git.png");
+    }
+    50%{
+        background-image: url("img/Github.png");
+    }
+    62.5%{
+        background-image: url("img/JavaScript.png");
+    }
+    75%{
+        background-image: url("img/Python.png");
+    }
+    87.5%{
+        background-image: url("img/Arduino.png");
+    }
+    100%{
+        background-image: url("img/HTML.png");
+    }
+}
+
 /* Mon CV toujours dans la page de profil*/
 
 #CV{
@@ -315,8 +361,7 @@ img{
 
 @keyframes projet {
     0%{
-        transform: scale(8);
-        /* transition: 2s; */
+        transform: scale(9);
     }
     100%{
         transform: scale();
