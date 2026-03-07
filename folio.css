@@ -13,6 +13,9 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: "Playfair Display", serif;
+     font-optical-sizing: auto;
+     font-style: normal;
 }
 
 header{
@@ -32,12 +35,6 @@ header{
     perspective: 700;
     z-index: 1;
 }
-
-/* #rest{
-    height: 400Px;
-    width: auto;
-    color: red;
-} */
 
 /* Les éléments dans le header. */
 
@@ -82,8 +79,6 @@ header{
     width: 100px;
     height: 50px;
     color: #800000;
-    /* z-index: 1000;
-    position: relative; */
 }
 
 .nav{
@@ -111,6 +106,12 @@ button:hover{
     cursor: pointer;
     ;
 }
+
+button:active{
+    opacity: 0.8;
+    color: white;
+}
+
 /* La séction de l'acceuil */
 
 #conteneur{
@@ -136,6 +137,7 @@ button:hover{
 }
 
 #Gi{
+    font-family: "Playfair Display", serif;
     font-size: 3.5em;
     color: #f8d237;
     padding: 5% 0 1% 20%;
@@ -231,7 +233,6 @@ p{
 #icon{
     width: 20em;
     height: 20em;
-    /* background-color: #f30000; */
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -274,21 +275,26 @@ p{
 
 #CV{
     text-align: center;
-    background: #121b28;
-    color: #f2b006;
-    font-size: 2em;
+    font-size: 1.5em;
     border: 2px solid #4E3B2A;
     border-radius: 25px;
     display: block;
     text-decoration: none;
     padding: 8px;
     width: fit-content;
-    margin: 50px auto;
+    margin: 50px auto; background: #f8d237;
+    color: #121b28;
+    box-shadow: inset 6px 6px 12px #635416,
+            inset -6px -6px 12px #ffff58;
+   
 }
 
 #CV:hover{
-    background: #f8d237;
-    color: #121b28;
+    font-size: 1.5em;
+    background: #121b28;
+    color: #f2b006;
+    box-shadow:  6px 6px 12px #1f1811,
+             -6px -6px 12px #7d5e43;
     transform: translateY(12px);
 }
 
@@ -419,7 +425,7 @@ footer{
 
 .contact:hover{
     box-shadow: inset 5px 5px 10px #070b10,
-            inset -5px -5px 10px #1d2b40;
+            inset -5px -5px 10px #2d4364;
 }
 
 .fa-envelope{
@@ -440,4 +446,8 @@ footer{
 
 .fa-whatsapp{
     color: rgb(55, 218, 69);
+}
+
+.fa-envelope:active,.fa-facebook:active,.fa-github:active,.fa-phone:active,.fa-whatsapp:active{
+    color:violet;
 }
