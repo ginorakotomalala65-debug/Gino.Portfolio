@@ -508,4 +508,16 @@ footer{
     #cont{
         font-size: 1em;
     }
+
+    #pro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list{
+        width: 50%;
+        margin: 20px 0;
+    }
 }
