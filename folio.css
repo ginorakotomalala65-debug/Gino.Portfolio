@@ -10,11 +10,11 @@ html{
 
 body{
     background-color: #455a76;
+    width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: "Playfair Display", serif;
-     font-optical-sizing: auto;
      font-style: normal;
 }
 
@@ -22,16 +22,15 @@ header{
     width: 100%;
     background: #121b28;
     margin: 0;
+    padding: 0 10px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 0 10px;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
-    padding: 0;
     perspective: 700;
     z-index: 1;
 }
@@ -52,8 +51,7 @@ header{
     }
     100%{
         transform: rotate3d(0, 0, 0, ) scale(1);
-        filter: blur(0);
-        transform: translateX(-100px);
+        filter: blur(0px);
     }
 }
 
@@ -76,7 +74,7 @@ header{
 }
 
 #vide{
-    width: 100px;
+    width: 10%;
     height: 50px;
     color: #800000;
 }
@@ -119,8 +117,7 @@ button:active{
     background-attachment: fixed;
     background-position-y: 70px;
     min-height: 100vh;
-    position: relative;
-    width: auto;
+    width: 100;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -128,7 +125,6 @@ button:active{
 
 .boite{
     display: none;
-    overflow: hidden;
     padding: 0;
 }
 
@@ -164,8 +160,7 @@ p{
 }
 
 .bla{
-    margin-left: 5%;
-    margin-bottom: 0;
+    margin: 5%;
     padding: 10px;
     color: #FAFAFA;
     border-radius: 15px;
@@ -226,7 +221,6 @@ p{
 
 #anicon{
     display: flex;
-    
     background: linear-gradient(45deg, #6e90bd #121b28, #1d2b40, #455e85);
 }
 
@@ -236,7 +230,7 @@ p{
     margin: auto;
     justify-content: center;
     align-items: center;
-    animation: diaporama 12s  linear infinite;
+    animation: diaporama 20s infinite;
     background-size: cover;
     background-position: center;
 }
@@ -244,6 +238,7 @@ p{
 @keyframes diaporama {
     0%{
         background-image: url("img/HTML.png");
+        animation-delay: 12s;
     }
     12.5%{
         background-image: url("img/CSS.png");
@@ -450,4 +445,67 @@ footer{
 
 .fa-envelope:active,.fa-facebook:active,.fa-github:active,.fa-phone:active,.fa-whatsapp:active{
     color:violet;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        font-size: 1em;
+    }
+    header{
+        font-size: 0.8em;
+    }
+    button{
+        margin: 0 5px;
+        padding: 0.5em;
+    }
+
+    #conteneur{
+        background: url("img/Gemini_Generated_Image_dcb605dcb605dcb6.png") cover;
+        /* background-attachment: fixed; */
+        background-position-y: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100;
+        height: 100%;
+        margin: 30px 0;
+        padding: 0;
+    }
+    #Gi{
+        font-family: "Playfair Display", serif;
+        color: #f8d237;
+        padding: 5%;
+        animation: trans 1s ease-out;
+    }
+    
+    p{
+        color: #FAFAFA;
+        display: inline-block;
+    }
+    
+    .sous-t{
+        margin:auto;
+        padding: 10px;
+        color: #394d6a;
+        border-radius: 15px;
+        animation: trans 1s ease;
+        background: linear-gradient(145deg, #f3e4c5, #ccc0a6);
+        box-shadow:  6px 6px 5px #5b554a,
+                 -6px -6px 5px #ffffff;
+    }
+    
+    .bla{
+        margin: 30px 0;
+        padding: 10px;
+        color: #FAFAFA;
+        border-radius: 15px;
+        animation: trans 1s ease;
+        background: #2a394e;
+        box-shadow:  5px 5px 8px #121922,
+                 -5px -5px 8px #42597a;
+    }
+
+    #cont{
+        font-size: 1em;
+    }
 }
